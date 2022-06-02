@@ -60,7 +60,6 @@ ul
     .nav-link
     {
         color: #212121;
-        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -70,7 +69,6 @@ ul
     .nav-contact
     {
         color: #757575;
-        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -80,12 +78,11 @@ ul
     /* Секція герой */
     .hero-section
     {
-        background-color: #2F303A
+        background-color: #2F303A;
     }
     .hero-title
     {
         color: #ffffff;
-        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 900;
         font-size: 44px;
@@ -95,22 +92,27 @@ ul
         text-transform: uppercase;
     }
     .hero-button
+    { 
+        background-color: #2196F3;
+        color: #ffffff;
+        margin-left: 700px;
+        margin-right: 700px;
+        width: 200px;
+        height: 50px;
+
+    }
+    .button-tite
     {
-        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.9;
-        display: flex;
-        align-items: center;
-        text-align: center;
         letter-spacing: 0.06em;
     }
     /* Секція особливості */
     .specific-title
     {
         color: #212121;
-        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
@@ -121,7 +123,6 @@ ul
     .description-specific
     {
         color: #757575;
-        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -132,7 +133,6 @@ ul
     .title-about-work
     {
         color: #212121;
-        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
@@ -144,7 +144,6 @@ ul
     .title-about-team
     {
         color: #212121;
-        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
@@ -155,7 +154,6 @@ ul
     .name-employee
     {
         color: #212121;
-        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -166,7 +164,6 @@ ul
     .description-employee
     {
         color: #757575;
-        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -179,7 +176,6 @@ ul
     .address
     {
         color: #ffffff;
-        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -193,7 +189,6 @@ ul
     .footer-contact
     {
         color: rgba(255, 255, 255, 0.6);
-        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -206,7 +201,6 @@ ul
     .filter-button
     {
         color: #212121;
-        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -218,7 +212,6 @@ ul
     .card-title
     {
         color: #212121;
-        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -228,7 +221,6 @@ ul
     .card-description
     {
         color: #757575;
-        font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
