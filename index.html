@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- headear -->
+<!-- header -->
 <header>
-    <div class="conteiner">
+    <div class="container header-nav">
         <a class="logo" href="./">
             <p><span class="logo-span">Web</span>Studio</p>
         </a>
@@ -23,107 +23,109 @@
                         rel="noopener noreferer">Портфоліо</a></li>
                 <li class="list-item"><a class="nav-link" href="">Контакти</a></li>
             </ul>
-            <ul class="link-list">
-                <li class="list-item"><a class="nav-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="list-item"><a class="nav-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
         </nav>
+        <ul class="contact-list">
+            <li class="contact-item"><a class="nav-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="contact-item"><a class="nav-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
     </div>
 </header>
 
 <main>
     <!-- Секція герой -->
-    <div class="conteiner">
-        <section class="hero-section section">
-            <h1 class="hero-title">
-                Ефективні рішення для вашого бізнесу
-            </h1>
-            <button class="hero-button" type="button"><span class="button-tite">Замовити послугу</span></button>
+        <section class="hero-section">
+            <div class="container container-hero">
+                <h1 class="hero-title">
+                    Ефективні рішення для вашого бізнесу
+                </h1>
+                <button class="hero-button" type="button"><span class="button-tite">Замовити послугу</span></button>
+            </div>
         </section>
-    </div>
+
 
     <!-- Секція особливості  -->
-    <div class="conteiner">
         <section class="section">
-            <ul>
-                <li class="list-item">
-                    <h3 class="specific-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p class="description-specific">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
-                        veritatis exercitationem velit magnam iure.</p>
-                </li>
-                <li class="list-item">
-                    <h3 class="specific-title">ПУНКТУАЛЬНІСТЬ</h3>
-                    <p class="description-specific">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
-                        veritatis exercitationem velit magnam iure.</p>
-                </li>
-                <li class="list-item">
-                    <h3 class="specific-title">ПЛАНУВАННЯ</h3>
-                    <p class="description-specific">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
-                        veritatis exercitationem velit magnam iure.</p>
-                </li>
-                <li class="list-item">
-                    <h3 class="specific-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                    <p class="description-specific">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
-                        veritatis exercitationem velit magnam iure.</p>
-                </li>
-            </ul>
+            <div class="container">
+                <ul>
+                    <li>
+                        <h3 class="specific-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                        <p class="description-specific">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                            veritatis exercitationem velit magnam iure.</p>
+                    </li>
+                    <li>
+                        <h3 class="specific-title">ПУНКТУАЛЬНІСТЬ</h3>
+                        <p class="description-specific">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                            veritatis exercitationem velit magnam iure.</p>
+                    </li>
+                    <li>
+                        <h3 class="specific-title">ПЛАНУВАННЯ</h3>
+                        <p class="description-specific">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                            veritatis exercitationem velit magnam iure.</p>
+                    </li>
+                    <li>
+                        <h3 class="specific-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                        <p class="description-specific">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                            veritatis exercitationem velit magnam iure.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
-    </div>
     
     <!-- Секція чим займаємось -->
-    <div class="conteiner">
-        <section>
-            <h2 class="title-about-work">ЧИМ МИ ЗАЙМАЄМОСЬ</h2>
-            <ul>
-                <li class="list-item"><img src="img/descktop and laptop.jpg alt=" image"></li>
-                <li class="list-item"><img src="img/second descktop and laptop.jpg" alt="image2"></li>
-                <li class="list-item"><img src="img/tablet.jpg" alt="image3"></li>
-            </ul>
+        <section class="section">
+            <div class="container">
+                <h2 class="title-about-work">ЧИМ МИ ЗАЙМАЄМОСЬ</h2>
+                <ul>
+                    <li><img src="img/descktop and laptop.jpg" alt="descktop"></li>
+                    <li><img src="img/second descktop and laptop.jpg" alt="image2"></li>
+                    <li><img src="img/tablet.jpg" alt="image3"></li>
+                </ul>
+            </div>
         </section>
-    </div>
     
     <!-- Секція знайомства -->
-    <div class="conteiner">
+
         <section id="team" class="section">
-            <p class="title-about-team">Наша команда</p>
-            <ul>
-                <li class="list-item">
-                    <img src="img/demyanenko.jpg" alt="Demianko" width="270" height="260">
-                    <p class="name-employee">Ігор Дем’яненко</p>
-                    <p class="description-employee">Product Designer</p>
-                </li>
-                <li>
-                    <img src="img/repina.jpg" alt="Rapina" width="270" height="260">
-                    <p class="name-employee">Ольга Репіна</p>
-                    <p class="description-employee">Frontend Developer</p>
-                </li>
-                <li class="list-item">
-                    <img src="img/tarasov.jpg" alt="Tarasov" width="270" height="260">
-                    <p class="name-employee">Микола Тарасов</p>
-                    <p class="description-employee">Marketing</p>
-                </li>
-                <li class="list-item">
-                    <img src="img/ermakov.jpg" alt="Ermakov" width="270" height="260">
-                    <p class="name-employee">Михайло Єрмаков</p>
-                    <p class="description-employee">UI Designer</p>
-                </li>
-            </ul>
+            <div class="container">
+                <p class="title-about-team">Наша команда</p>
+                <ul>
+                    <li>
+                        <img src="img/demyanenko.jpg" alt="Demianko" width="270" height="260">
+                        <p class="name-employee">Ігор Дем’яненко</p>
+                        <p class="description-employee">Product Designer</p>
+                    </li>
+                    <li>
+                        <img src="img/repina.jpg" alt="Rapina" width="270" height="260">
+                        <p class="name-employee">Ольга Репіна</p>
+                        <p class="description-employee">Frontend Developer</p>
+                    </li>
+                    <li>
+                        <img src="img/tarasov.jpg" alt="Tarasov" width="270" height="260">
+                        <p class="name-employee">Микола Тарасов</p>
+                        <p class="description-employee">Marketing</p>
+                    </li>
+                    <li>
+                        <img src="img/ermakov.jpg" alt="Ermakov" width="270" height="260">
+                        <p class="name-employee">Михайло Єрмаков</p>
+                        <p class="description-employee">UI Designer</p>
+                    </li>
+                </ul>
+            </div>
         </section>
-    </div>
     
 </main>
 <!-- footer -->
 <footer class="footer">
     <div class="container">
         <nav>
-            <a class="logo" href="">
+            <a class="logo" href="./">
                 <p class="logo-text"><span class="logo-span">Web</span>Studio</p>
             </a>
         </nav>
         <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
-        <ul>
-            <li class="list-item footer-list-item"><a class="footer-contact" href="mailto:info@example.com">info@example.com</a></li>
-            <li class="list-item footer-list-item"><a class="footer-contact" href="tel:+380991111111">+38 099 111 11 11</a></li>
+        <ul >
+            <li class="footer-list-item"><a class="footer-contact" href="mailto:info@example.com">info@example.com</a></li>
+            <li class="footer-list-item"><a class="footer-contact" href="tel:+380991111111">+38 099 111 11 11</a></li>
         </ul>
     </div>
 </footer>

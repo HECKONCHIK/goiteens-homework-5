@@ -6,15 +6,21 @@ secondary-link-color: color: #2196F3
 background-color: background-color: #2F303A*/
 
 /* WebStudio */
-.conteiner
+.container
 {
-
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-
 .section
 {
     padding-top: 94px;
     padding-bottom: 94px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 :root
@@ -23,6 +29,7 @@ background-color: background-color: #2F303A*/
     --title-text-color: #212121;
     --acent-color: #2196F3;
     --background-color: #ffffff;
+    --button-color: #F5F4FA;
 }
 body
 {
@@ -30,9 +37,20 @@ body
     background-color: #ffffff;
     font-family: roboto, sans-serif
 }
+a {
+    text-decoration: none;
+}
 ul
 {
     list-style: none;
+}
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
 }
     /* headear */
     .logo
@@ -47,7 +65,7 @@ ul
     }
     .logo-text
     {
-        color: #ffffff
+        color: var(--background-color);
     }
     .logo-span,
     .nav-link:focus,
@@ -55,11 +73,11 @@ ul
     .nav-contact:focus,
     .nav-contact:hover
     {
-        color: #2196F3
+        color: var(--acent-color)
     }
     .nav-link
     {
-        color: #212121;
+        color: var(--title-text-color);
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -68,21 +86,45 @@ ul
     }
     .nav-contact
     {
-        color: #757575;
+        color: var(--primery-text-color);
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.1;
         letter-spacing: 0.02em;
     }
+    .header-nav {
+        display: flex;
+        align-items: center;
+        /* align-items: baseline; */
+    }
+    .nav-list {
+        display: flex;
+    }
+    .nav-list li+li {
+        margin-left: 54px;
+    }
+    .contact-list{
+        display: flex;
+    }
+    .contact-list li+li {
+        margin-left: 50px;
+    }
+
     /* Секція герой */
     .hero-section
     {
         background-color: #2F303A;
     }
+    .container-hero {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        padding-left: 452px;
+        padding-right: 452px;
+    }
     .hero-title
     {
-        color: #ffffff;
+        color: var(--background-color);
         font-style: normal;
         font-weight: 900;
         font-size: 44px;
@@ -93,10 +135,11 @@ ul
     }
     .hero-button
     { 
-        background-color: #2196F3;
-        color: #ffffff;
-        margin-left: 700px;
-        margin-right: 700px;
+        background-color: var(--acent-color);
+        color: var(--background-color);
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
         width: 200px;
         height: 50px;
 
@@ -108,11 +151,13 @@ ul
         font-size: 16px;
         line-height: 1.9;
         letter-spacing: 0.06em;
+        display: flex;
+        margin: auto;
     }
     /* Секція особливості */
     .specific-title
     {
-        color: #212121;
+        color: var(--title-text-color);
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
@@ -122,7 +167,7 @@ ul
     }
     .description-specific
     {
-        color: #757575;
+        color: var(--primery-text-color);
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -132,7 +177,7 @@ ul
     /* Секція чим займаємось */
     .title-about-work
     {
-        color: #212121;
+        color: var(--title-text-color);
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
@@ -143,7 +188,7 @@ ul
     /* Секція знайомства */
     .title-about-team
     {
-        color: #212121;
+        color: var(--title-text-color);
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
@@ -153,7 +198,7 @@ ul
     }
     .name-employee
     {
-        color: #212121;
+        color: var(--title-text-color);
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -163,7 +208,7 @@ ul
     }
     .description-employee
     {
-        color: #757575;
+        color: var(--primery-text-color);
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -175,16 +220,18 @@ ul
 
     .address
     {
-        color: #ffffff;
+        color: var(--background-color);
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.03em;
+        display: flex;
+        margin-top: 20px;
     }
     .footer
     {
-        background-color: #2F303A
+        background-color: #2F303A;
     }
     .footer-contact
     {
@@ -195,23 +242,30 @@ ul
         line-height: 1.7;
         letter-spacing: 0.03em;
     }
+    .footer-list-item {
+        display: flex;
+    }
+    .footer-list-item li+li {
+        margin-bottom: 9px;
+    }
 /* Portfolio */
 
     /* Filter button */
-    .filter-button
+    .title-button
     {
-        color: #212121;
+        color: var(--title-text-color);
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.6;
         text-align: center;
         letter-spacing: 0.03em;
+        width: 73px;
     }
     /* card */
     .card-title
     {
-        color: #212121;
+        color: var(--title-text-color);
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -220,7 +274,7 @@ ul
     }
     .card-description
     {
-        color: #757575;
+        color: var(--primery-text-color);
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
